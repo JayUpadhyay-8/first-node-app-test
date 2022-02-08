@@ -25,5 +25,5 @@ const userController = new UserController_1.default(app, userDao);
 const tuitController = new TuitController_1.default(app, tuitDao);
 //const PORT = 4000;
 app.listen(process.env.PORT || 4000, () => {
-    console.log(`Example app listening on port 4000`);
+    console.log(`Example app listening on port 4000npx tsc `);
 });
