@@ -23,7 +23,7 @@ app.get('/', (req, res) => res.send('Welcome!'));
 app.get('/add/:a/:b', (req, res) => res.send(req.params.a + req.params.b));
 const userController = new UserController_1.default(app, userDao);
 const tuitController = new TuitController_1.default(app, tuitDao);
-const PORT = 4000;
-app.listen((process.env.PORT || PORT), () => {
-    console.log(`Example app listening on port ${PORT}`);
+//const PORT = 4000;
+app.listen(process.env.PORT || 4000, () => {
+    console.log(`Example app listening on port 4000`);
 });
