@@ -28,7 +28,7 @@ const tuitController = new TuitController(app, tuitDao );
 
 
 
-//const PORT = 4000;
-app.listen(process.env.PORT || 4000, () => {
+const PORT = 4000;
+app.listen((process.env.PORT || PORT), () => {
     console.log(`Example app listening on port ${PORT}`)
 })
